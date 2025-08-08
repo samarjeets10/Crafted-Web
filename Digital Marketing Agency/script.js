@@ -35,3 +35,13 @@ ScrollReveal().reveal(".header_btn", {
     ...scrollRevealOption,
     delay: 1000,
 })
+
+ScrollReveal().reveal(".service_card", {
+    ...scrollRevealOption,
+    interval: 500,
+})
+
+ScrollReveal().reveal(".service_btn", {
+    ...scrollRevealOption,
+    delay: 2000,
+})
