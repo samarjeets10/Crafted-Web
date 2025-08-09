@@ -45,3 +45,13 @@ ScrollReveal().reveal(".service_btn", {
     ...scrollRevealOption,
     delay: 2000,
 })
+
+ScrollReveal().reveal(".about_container .section_header", {
+    ...scrollRevealOption,
+})
+
+ScrollReveal().reveal(".about_list li", {
+    ...scrollRevealOption,
+    delay: 500,
+    interval: 500,
+})
