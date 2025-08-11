@@ -55,3 +55,31 @@ ScrollReveal().reveal(".about_list li", {
     delay: 500,
     interval: 500,
 })
+
+ScrollReveal().reveal(".portfolio_container .section_header", {
+    ...scrollRevealOption,
+})
+
+ScrollReveal().reveal(".portfolio_container .section_description", {
+    ...scrollRevealOption,
+    delay: 500,
+})
+
+ScrollReveal().reveal(".portfolio_image", {
+    ...scrollRevealOption,
+    origin: "right",
+    delay: 1000,
+})
+
+ScrollReveal().reveal(".portfolio_list li", {
+    ...scrollRevealOption,
+    delay: 1500,
+    interval: 500,
+});
+
+
+const swiper = new Swiper(".swiper", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: true,
+})
