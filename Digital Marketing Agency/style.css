@@ -161,12 +161,13 @@ nav {
 
 .header_content h1 {
     margin-bottom: 1rem;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     color: var(--text-dark);
-    line-height: 4.75rem;
+    line-height: 3.75rem;
     text-align: center;
 }
+
 .header_content h1 span {
     color: var(--secondary-color);
 }
@@ -357,6 +358,11 @@ nav {
     gap: 2rem;
 }
 
+.portfolio_header .section_description {
+    color: var(--text-light);
+    text-align: center;
+}
+
 .portfolio_image {
     position: relative;
     isolation: isolate;
@@ -365,9 +371,9 @@ nav {
 .portfolio_image_content {
     position: absolute;
     top: 0;
-    right: 2rem;
+    right: 0;
     transform: translateY(-50%);
-    padding-block: 1.5rem;
+    padding-block: 1rem;
     display: flex;
     align-items: center;
     background-color: var(--secondary-color);
@@ -419,6 +425,7 @@ nav {
 
 .portfolio_list li span {
     width: 5rem;
+    padding-inline: 0.3rem;
     aspect-ratio: 1;
     display: grid;
     place-content: center;
@@ -437,6 +444,7 @@ nav {
 }
 
 .portfolio_list .section_description {
+    color: var(--text-light);
     text-align: left;
 }
 
@@ -635,7 +643,7 @@ nav {
 
 @media (width > 540px) {
     .service_grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .footer_container {
