@@ -76,4 +76,4 @@ cd Crafted-Web
 
  - LinkedIn: https://www.linkedin.com/in/samarjeet-sabale-9254b82ba/
 
- - Twitter/X: 
+ - Twitter/X: https://x.com/SamarjeetSabale
