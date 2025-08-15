@@ -77,9 +77,23 @@ ScrollReveal().reveal(".portfolio_list li", {
     interval: 500,
 });
 
+ScrollReveal().reveal(".feedback_container .section_header", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
 
 const swiper = new Swiper(".swiper", {
     slidesPerView: 2,
     spaceBetween: 20,
     loop: true,
+});
+
+ScrollReveal().reveal(".subscribe_content .section_header", {
+    ...scrollRevealOption,
 })
+
+ScrollReveal().reveal(".subscribe_content form", {
+    ...scrollRevealOption,
+    delay: 500,
+});
