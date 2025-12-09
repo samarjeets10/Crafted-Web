@@ -34,4 +34,24 @@ ScrollReveal().reveal("header form", {
 ScrollReveal().reveal(".service__card", {
     ...scrollRevealOption,
     interval: 500,
-})
+});
+
+ScrollReveal().reveal(".experience__content .section__header", {
+    ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".experience__content p", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".experience__btn", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".experience__stats", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
+
