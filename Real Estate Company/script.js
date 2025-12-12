@@ -55,3 +55,9 @@ ScrollReveal().reveal(".experience__stats", {
     delay: 1500,
 });
 
+
+const swiper = new Swiper(".swiper", {
+    slidesPreView: 2,
+    spaceBetween: 20,
+    loop: true,
+});
