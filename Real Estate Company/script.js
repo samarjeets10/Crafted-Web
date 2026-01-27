@@ -57,7 +57,16 @@ ScrollReveal().reveal(".experience__stats", {
 
 
 const swiper = new Swiper(".swiper", {
-    slidesPreView: 2,
-    spaceBetween: 20,
-    loop: true,
+    slidesPerView:2,
+    spaceBetween:20,
+    loop:true,
+});
+
+ScrollReveal().reveal(".subscribe .section__header", {
+    ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".subscribe form", {
+    ...scrollRevealOption,
+    delay: 500,
 });
