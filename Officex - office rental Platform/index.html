@@ -5,13 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Officx - Office Rental Platform</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
 
     <div class="wrapper">
 
         <section class="hero__section">
-            
+            <div class="navBar">
+                
+                <div class="nav__links">
+                    <h4><a href="#">About</a></h4>
+                    <h4><a href="#">Spaces</a></h4>
+                    <h4><a href="#">Locations</a></h4>
+                    <h4><a href="#">Contact</a></h4>
+                </div>
+
+                <div class="nav__menu">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+
+            </div>
+
+            <div class="hero__content">
+
+                <div class="hero__title">
+                    <h1>Officex</h1>
+                </div>
+
+                <div class="hero__text">
+                    
+                    <div class="content__title__text">
+                        <h2>Find Your Next <br> 
+                            Coworking Office
+                        </h2>
+                        <div>
+                            <p>
+                                Find & Make your interior really stand out from the box.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="search__container">
+                        <div class="input__content">
+
+                            <div class="search__group">
+                                <label for="Locations">Locations</label>
+                                <select name="locations" id="locations">
+                                    <option value="" disabled selected></option>
+                                    <option value="usa">United States</option>
+                                    <option value="europe">Europe</option>
+                                    <option value="asia">Asia</option>
+                                </select>
+                            </div>
+
+                            <!-- <div class="divider"></div> -->
+
+                            <div class="search__group">
+                                <label for="size">Size</label>
+                                <select name="size" id="size">
+                                    <option value="" disabled selected></option>
+                                    <option value="usa">United States</option>
+                                    <option value="europe">Europe</option>
+                                    <option value="asia">Asia</option>
+                                </select>
+                            </div>
+
+                            <!-- <div class="divider"></div> -->
+
+                            <div class="search__group">
+                                <label for="city">City</label>
+                                <select name="city" id="city">
+                                    <option value="" disabled selected></option>
+                                    <option value="usa">United States</option>
+                                    <option value="europe">Europe</option>
+                                    <option value="asia">Asia</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <button class="search__btn">Search Now</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </section>
 
     </div>
