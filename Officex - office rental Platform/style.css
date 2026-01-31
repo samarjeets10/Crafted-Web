@@ -10,6 +10,8 @@
 
     --text-dark: #0f0f0f;
     --text-gray: #8d8d8d;
+    
+    --gray-light: #EEEEEE;
 }
 
 * {
@@ -124,73 +126,54 @@ body {
     color: var(--primary-light);
 }
 
+
 .search__container {
-    /* max-width: 80%; */
-    margin-top: 1rem;
+    max-width: fit-content;
+    margin-top: 2rem;
     padding: 1rem;
-    border-radius: 2rem;
     background-color: var(--primary-light);
+    border-radius: 1.5rem;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.input__content {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
+    gap: 2rem;
     justify-content: space-between;
 }
 
 .search__group {
     padding-inline: 0.5rem;
-    background-color: transparent;
+    border-right: 2px solid var(--gray-light);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.search__container label {
+.search__group h4 {
     font-size: 1rem;
+    font-weight: 700;
     color: var(--primary-dark);
 }
 
-.divider {
-    height: 25px;
-    width: 4px;
-    border-radius: 1rem;
-    background-color: var(--text-gray);
-}
-
-.search__group {
-    width: 100%;
-    /* padding-inline: 0.5rem; */
-
-    display: flex;
-    align-items: center;
-}
-
-.search__group label {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-dark);
-}
-
 .search__group select {
-    outline: none;
+    width: 20px;
     border: none;
+    outline: none;
+    cursor: pointer;
 }
 
-
-.search__btn  {
+.search__btn button {
     padding: 1rem;
     border: none;
+    border-radius: 1rem;
     background-color: var(--primary-dark);
     color: var(--primary-light);
-    border-radius: 1rem;
 
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
+    white-space: nowrap;
 }
+
+
 
 
 
@@ -249,11 +232,35 @@ body {
         font-size: 1rem;
     }
 
+    .search__container {
+        padding: 0.6rem;
+        gap: 1rem;
+        border-radius: 1rem;
+    }
+
+    .search__group {
+        gap: 0.4rem;
+    }
+
+    .search__group h4 {
+        font-size: 0.8rem;
+    }
+
+    .search__btn button {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        border-radius: 0.5rem;
+    }
+
 
 }
 
 
 @media (width < 540px) {
+
+    .wrapper {
+        padding-inline: 0.6rem;
+    }
 
     .hero__title h1 {
         font-size: 6rem;
@@ -271,4 +278,20 @@ body {
         font-size: 0.8rem;
     }
 
+    .search__container {
+        gap: 0.4rem;
+    }
+
+    .search__group {
+        padding-inline: 0.2rem;
+        gap: 0.4rem;
+    }
+
+    .search__group h4 {
+        font-size: 0.6rem;
+    }
+
+    .search__btn button {
+        font-size: 0.6rem;
+    }
 }
