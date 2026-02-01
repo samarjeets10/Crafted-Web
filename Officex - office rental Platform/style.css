@@ -167,15 +167,45 @@ body {
     border-radius: 1rem;
     background-color: var(--primary-dark);
     color: var(--primary-light);
+    cursor: pointer;
 
     font-size: 0.9rem;
     font-weight: 600;
     white-space: nowrap;
 }
 
+.sub__hero__section {
+    width: 100%;
+    padding-block: 8rem 4rem;
+    padding-inline: 6rem;
+}
 
+.main__text__container {
+    width: 100%;
 
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
 
+.left__text {
+    width: 50%;
+}
+
+.left__text p {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+}
+
+.right__text {
+    width: 50%;
+}
+
+.right__text h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
 
 
 
@@ -197,6 +227,9 @@ body {
         font-size: 1.2rem;
     }
 
+    .sub__hero__section {
+        padding-inline: 4rem;
+    }
 
 }
 
@@ -252,6 +285,18 @@ body {
         border-radius: 0.5rem;
     }
 
+    .sub__hero__section {
+        padding-block: 4rem 1rem;
+        padding-inline: 4rem;
+    }
+
+    .left__text p {
+        font-size: 0.8rem;
+    }
+
+    .right__text h4 {
+        font-size: 1rem;
+    }
 
 }
 
@@ -293,5 +338,22 @@ body {
 
     .search__btn button {
         font-size: 0.6rem;
+    }
+
+    .sub__hero__section {
+        padding-inline: 2rem 1rem;
+    }
+
+    .main__text__container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .left__text {
+        width: 100%;
+    }
+
+    .right__text {
+        width: 100%;
     }
 }
