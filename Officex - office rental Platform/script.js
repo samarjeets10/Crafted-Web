@@ -1,29 +1,30 @@
 
 const swiper = new Swiper(".swiper", {
-    slidesPerView:3,
-    spaceBetween:20,
+    slidesPerView:1,
+    spaceBetween:10,
     loop:true,
     watchOverflow: true,
 
     breakpoints: {
 
-        0: {
-            slidesPerView: 1,
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
         },
-
-        540: {
+            // when window width is >= 768px (Medium devices)
+        768: {
             slidesPerView: 2,
             spaceBetween: 30,
         },
-
-        769: {
+            // when window width is >= 992px (Large devices)
+        992: {
             slidesPerView: 3,
-            spaceBetween: 60,
+            spaceBetween: 40,
         },
-
-        1024: {
+            // when window width is >= 1200px (Extra large devices)
+        1200: {
             slidesPerView: 3,
-            spaceBetween: 140,
+            spaceBetween: 50,
         },
 
     },
