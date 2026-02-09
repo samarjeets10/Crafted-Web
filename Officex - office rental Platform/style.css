@@ -462,6 +462,18 @@ body {
     font-size: 1rem;
 }
 
+.footer__hero__title h1 {
+    color: var(--text-dark);
+}
+
+
+@media (width > 1024px) {
+
+    .hero__title h1 {
+        font-size: 22vw;
+    }
+}
+
 
 @media (width < 1024px) {
 
