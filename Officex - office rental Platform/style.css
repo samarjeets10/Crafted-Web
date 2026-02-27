@@ -97,7 +97,7 @@ body {
 }
 
 .hero__title h1 {
-    font-size: 16vw;
+    font-size: 12vw;
     color: var(--primary-light);
 }
 
@@ -532,6 +532,11 @@ body {
     font-size: 0.88rem;
 }
 
+.light__cta__btn {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+}
+
 .cta__banner {
     height: 90vh;
     width: 100%;
@@ -558,6 +563,66 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    width: 100%;
+    padding: 2rem;
+}
+
+.footer__container {
+    width: 100%;
+    padding-inline: 6vw;
+    padding-block: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.footer__left__content {
+    width: 50%;
+}
+
+.footer__content__box {
+    width: fit-content;
+    padding-bottom: 1.2rem;
+    border-bottom: 3px solid var(--gray-light);
+}
+
+.footer__content__cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14vw;
+}
+
+.footer__content__box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.8rem;
+}
+
+.footer__content__cta i {
+    font-size: 1.2rem;
+}
+
+
+.footer__right__content {
+    width: 50%;
+}
+
+.footer__option__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.opt__list li:first-child {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-gray);
 }
 
 
@@ -626,6 +691,10 @@ body {
         font-size: 0.8rem;
     }
 
+    .feature__container {
+        height: 40vh;
+    }
+
     .right__feature__container {
         padding-inline: 0.5rem;
     }
@@ -640,8 +709,16 @@ body {
         gap: 0.8rem;
     }
 
+    .corosal__section {
+        padding-inline: 4rem;
+    }
+
     .testimonial__card {
         padding: 1rem;
+    }
+
+    .cta__banner {
+        height: 80vh;
     }
 
 
@@ -714,7 +791,8 @@ body {
     }
 
     .carousel__section {
-        padding-inline: 4rem;
+        padding-inline: 3.2rem;
+        padding-block: 2.2rem;
     }
 
     .swiper {
@@ -965,7 +1043,7 @@ body {
     }
 
     .cta__banner {
-        height: 50vh;
+        height: 30vh;
     }
 
     .title {
