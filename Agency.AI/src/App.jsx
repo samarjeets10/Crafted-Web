@@ -1,9 +1,30 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
+import Navbar from './components/Navbar'
 
 function App() {
+
+  const [theme, setTheme] = useState(() => {
+
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme === 'dark' || savedTheme === 'light') {
+
+      console.log(savedTheme);
+      return savedTheme
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  })
+
+  useEffect(() => {
+    
+    document.documentElement.classList.toggle('dark', theme === 'dark')
+    localStorage.setItem('theme', theme)
+    
+  }, [theme])
+
   return (
-    <div className='h-screen w-full flex items-center justify-center'>
-      <h1 className='text-4xl font-semibold'>Agency.ai</h1>
+    <div className='w-full min-h-screen dark:bg-black relative'>
+      <Navbar theme={theme} setTheme={setTheme}/>
     </div>
   )
 }
