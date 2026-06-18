@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero';
 
 function App() {
 
@@ -19,12 +20,14 @@ function App() {
     
     document.documentElement.classList.toggle('dark', theme === 'dark')
     localStorage.setItem('theme', theme)
-    
+
   }, [theme])
 
   return (
     <div className='w-full min-h-screen dark:bg-black relative'>
       <Navbar theme={theme} setTheme={setTheme}/>
+
+      <Hero />
     </div>
   )
 }
