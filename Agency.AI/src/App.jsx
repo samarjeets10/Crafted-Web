@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero';
 import TrustedBy from './components/TrustedBy';
+import Services from './components/Services';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <Navbar theme={theme} setTheme={setTheme}/>
       <Hero />
       <TrustedBy />
+      <Services />
     </div>
   )
 }
