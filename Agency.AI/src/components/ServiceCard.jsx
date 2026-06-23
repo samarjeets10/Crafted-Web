@@ -1,4 +1,5 @@
 import {useRef, useState} from 'react'
+import { motion } from 'motion/react';
 
 function ServiceCard({service, index}) {
 
@@ -13,7 +14,11 @@ function ServiceCard({service, index}) {
     }
 
   return (
-    <div 
+    <motion.div 
+    initial={{opacity: 0, y: 30}}
+    whileInView={{opacity: 1, y: 0}}
+    transition={{duration: 0.5, delay: index * 0.2}}
+    viewport={{once: true}}
     onMouseEnter={() => setVisible(true)}
     onMouseLeave={() => setVisible(false)}
     ref={divRef}
@@ -39,7 +44,7 @@ function ServiceCard({service, index}) {
 
             </div>
 
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,6 +1,7 @@
 import assets from '../assets/assets'
 import ServiceCard from './ServiceCard';
 import Title from './Title'
+import { motion } from 'motion/react';
 
 function Services() {
 
@@ -28,7 +29,11 @@ function Services() {
     ];
 
   return (
-    <div 
+    <motion.div 
+    initial="hidden"
+    whileInView="visible"
+    viewport={{once: true}}
+    transition={{staggerChildren: 0.2}}
     className='relative flex flex-col items-center gap-7 px-4 sm:12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white'
     id='services'>
 
@@ -46,7 +51,7 @@ function Services() {
             }
         </div>
 
-    </div>
+    </motion.div>
   )
 }
 
